@@ -16,8 +16,10 @@ export default function HeroSection() {
                         in software engineering, systems thinking, and applied computing.
                     </p>
                 </div>
-                <button className="blur btn btn-primary">Get In Touch</button>
-                <button className="blur btn btn-primary">Download CV</button>
+                <span className="hero-section-buttons">
+                    <button className="blur btn btn-primary">Get In Touch</button>
+                    <button className="blur btn btn-primary">Download CV</button>
+                </span>
             </div>
             <div className="hero-section-imgx">
                 <img src="./img/hero_img.png" alt="Hero Section Img"/>
