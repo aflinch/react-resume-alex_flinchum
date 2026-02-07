@@ -1,7 +1,7 @@
 /* Globel CSS */
 body {
     margin: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: "Arial", Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: auto;
     font-style: normal;
@@ -12,6 +12,7 @@ h1,h2,h3,h4,h5,h6,p {
 
 :root {
     --primary: #5e3bee;
+    --primary-shadow: #5e3beebf;
     --heading-color: #282938;
     --bg-shade: #f5fcff;
     --github: #e62872;
@@ -22,7 +23,7 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .btn {
-    font-family: "Roboto", sans-serif;
+    font-family: "Arial", Helvetica, sans-serif;
     padding: 12px 20px;
     font-size: 16px;
     font-style: normal;
@@ -30,35 +31,39 @@ h1,h2,h3,h4,h5,h6,p {
     cursor: pointer;
     text-align: center;
     text-decoration: none;
-    color: var(--black);
-    border: solid var(--heading-color);
+    color: var(--primary);
+    background-color: var(--bg-shade);
+    border: solid var(--primary);
     border-radius: 1000px;
     position: relative;
 
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .btn:hover {
-    background-color: var(--heading-color);
+    background-color: var(--primary);
     color: var(--off-white);
     transform: scale(1.05);
 }
 
 /* Main Headings */
 h1 {
+    font-family: "Arial Black", Helvetica, sans-serif;
     font-size: 56px;
-    font-weight: 700;
+    font-weight: bold;
     line-height: 67px;
 }
 h2 {
+    font-family: "Arial Black", Helvetica, sans-serif;
     font-size: 48px;
     font-weight: 700;
     line-height: 58px;
 }
 h3 {
+    font-family: "Arial Black", Helvetica, sans-serif;
     font-size: 24px;
     font-weight: 700;
     line-height: 34px;
@@ -85,6 +90,9 @@ h3 {
     flex-direction: column;
     align-items: flex-start;
     gap: 21.333px;
+}
+.hero-section-title-sub-color {
+    color: var(--primary);
 }
 .hero-section-buttons {
     display: flex;
