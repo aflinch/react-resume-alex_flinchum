@@ -1,0 +1,87 @@
+/* Globel CSS */
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: auto;
+    font-style: normal;
+}
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
+:root {
+    --primary: #5e3bee;
+    --heading-color: #282938;
+    --bg-shade: #f5fcff;
+    --github: #e62872;
+    --darkblue: #1c1e53;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+.btn {
+    font-family: "Roboto", sans-serif;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    border: solid #008cff;
+    border-radius: 1000px;
+    position: relative;
+
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn:hover {
+    background-color: #008cff;
+    color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+/* Main Headings */
+h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 67px;
+}
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+}
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+}
+
+/* Hero Section */
+.hero-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 133.333px 85.333px 133.333px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    background-color: var(--bg-shade);
+}
+.hero-section-content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+.hero-section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 21.333px;
+}
