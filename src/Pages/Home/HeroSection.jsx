@@ -16,11 +16,19 @@ export default function HeroSection() {
                     </p>
                 </div>
                 <span className="hero-section-buttons">
-                    <button className="blur btn btn-primary">Get In Touch</button>
-                    <button className="blur btn btn-primary">Download CV</button>
+                    <button className="btn btn-primary">Get In Touch</button>
+                    <button className="btn btn-primary">Download CV</button>
+                </span>
+                <span className="hero-section-links">
+                    <a href=" " className="link" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/linkedin_img.png" alt="Linkedin"/>
+                    </a>
+                    <a href=" " className="link" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/github_img.png" alt="Github"/>
+                    </a>
                 </span>
             </div>
-            <div className="hero-section-imgx">
+            <div className="hero-section-img">
                 <img src="./img/hero_img.png" alt="Hero Section Img"/>
             </div>
         </section>

@@ -34,7 +34,7 @@ h1,h2,h3,h4,h5,h6,p {
     color: var(--primary);
     background-color: var(--bg-shade);
     border: solid var(--primary);
-    border-radius: 1000px;
+    border-radius: 5px;
     position: relative;
 
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ;
@@ -47,6 +47,13 @@ h1,h2,h3,h4,h5,h6,p {
     background-color: var(--primary);
     color: var(--off-white);
     transform: scale(1.05);
+}
+
+.link {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid var(--heading-color);
 }
 
 /* Main Headings */
@@ -73,7 +80,7 @@ h3 {
 .hero-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 133.333px 85.333px 133.333px;
+    padding: 133.333px 85.333px 103.333px;
     align-items: center;
     justify-content: space-between;
     gap: 32px;
@@ -99,4 +106,12 @@ h3 {
     flex-direction: row;
     align-items: flex-start;
     gap: 10.333px;
+}
+.hero-section-links {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 100px;
+    /* This pushes the element to the bottom */
+    margin-top: 33px;
 }
