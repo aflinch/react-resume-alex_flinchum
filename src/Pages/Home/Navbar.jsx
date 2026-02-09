@@ -6,23 +6,30 @@ function Navbar() {
 
     const toggleNav = () => {
         setNavActive(!navActive);
-    }
+    };
 
     const closeMenu = () => {
         setNavActive(false);
-    }
+    };
 
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth <= 500) {
                 closeMenu();
             }
-        }
+        };
 
         window.addEventListener("resize", handleResize);
 
         return () => {
             window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+    useEffect(() => {
+        if(window.innerWidth <= 1200) {
+            closeMenu();
         }
-    });
+    }, []);
+
+
 }
