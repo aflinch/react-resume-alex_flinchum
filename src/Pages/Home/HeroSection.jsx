@@ -3,11 +3,10 @@ export default function HeroSection() {
         <section id="heroSection" className="hero-section">
             <div className="hero-section-content-box">
                 <div className="hero-section-content">
-                    <p className="hero-section-title">Hello, I'm Alex Flinchum</p>
+                    <h3 className="hero-section-name">Hello, I'm Alex Flinchum</h3>
                     <h1 className="hero-section-title">
-                        <span className="hero-section-title-color">Full Stack</span>{" "}
-                        <br />
-                        Developer
+                        <span className="hero-section-title-color">Full-Stack </span>
+                        <span className="hero-section-title-sub-color">Developer</span>
                     </h1>
                     <p className="hero-section-description">
                         Full-stack developer with 6+ years building, testing, and delivering production software.
@@ -17,11 +16,22 @@ export default function HeroSection() {
                     </p>
                 </div>
                 <span className="hero-section-buttons">
-                    <button className="blur btn btn-primary">Get In Touch</button>
-                    <button className="blur btn btn-primary">Download CV</button>
+                    <button className="btn btn-primary">Get In Touch</button>
+                    <button className="btn btn-primary">Download CV</button>
+                </span>
+                <span className="hero-section-links">
+                    <a href=" " className="link" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/linkedin_img.png" alt="Linkedin"/>
+                    </a>
+                    <a href=" " className="link" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/github_img.png" alt="Github"/>
+                    </a>
+                    <a href=" " className="link" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/leetcode_img.png" alt="LeetCode"/>
+                    </a>
                 </span>
             </div>
-            <div className="hero-section-imgx">
+            <div className="hero-section-img">
                 <img src="./img/hero_img.png" alt="Hero Section Img"/>
             </div>
         </section>
