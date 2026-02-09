@@ -3,7 +3,7 @@ export default function HeroSection() {
         <section id="heroSection" className="hero-section">
             <div className="hero-section-content-box">
                 <div className="hero-section-content">
-                    <h3 className="hero-section-title">Hello, I'm Alex Flinchum</h3>
+                    <h3 className="hero-section-name">Hello, I'm Alex Flinchum</h3>
                     <h1 className="hero-section-title">
                         <span className="hero-section-title-color">Full-Stack </span>
                         <span className="hero-section-title-sub-color">Developer</span>
@@ -25,6 +25,9 @@ export default function HeroSection() {
                     </a>
                     <a href=" " className="link" target="_blank" rel="noopener noreferrer">
                         <img src="./img/github_img.png" alt="Github"/>
+                    </a>
+                    <a href=" " className="link" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/leetcode_img.png" alt="LeetCode"/>
                     </a>
                 </span>
             </div>
