@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 function Navbar() {
     const [navActive, setNavActive] = useState(false);
@@ -31,5 +31,13 @@ function Navbar() {
         }
     }, []);
 
-
+    return (
+        <nav className={`navbar ${navActive ? "active" : ""}`}>
+            <div>
+                <img src="./img/logo.png" alt="Logo" />
+            </div>
+        </nav>
+    );
 }
+
+export default Navbar;
