@@ -52,31 +52,23 @@ function Navbar() {
                             smooth={true}
                             offset={-70}
                             duration={500}
-                            to="heroSection"
+                            to="/Home"
                             className="navbar-content">
                             Home
                         </Link>
                         <Link
                             onClick={closeMenu}
                             activeClass="navbar-active-content"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                            to="MyResume"
+                            to="/MyResume"
                             className="navbar-content">
-                            Resume
+                            Experience
                         </Link>
                         <Link
                             onClick={closeMenu}
                             activeClass="navbar-active-content"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                            to="AboutMe"
+                            to="/AboutMe"
                             className="navbar-content">
-                            About Me
+                            About
                         </Link>
                     </li>
                 </ul>
