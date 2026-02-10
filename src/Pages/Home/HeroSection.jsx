@@ -1,4 +1,36 @@
+import {Link} from "react-router-dom";
+import {useEffect, useState} from "react";
+
 export default function HeroSection() {
+    const [navActive, setNavActive] = useState(false);
+
+    const toggleNav = () => {
+        setNavActive(!navActive);
+    };
+
+    const closeMenu = () => {
+        setNavActive(false);
+    };
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth <= 500) {
+                closeMenu();
+            }
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+    useEffect(() => {
+        if(window.innerWidth <= 1200) {
+            closeMenu();
+        }
+    }, []);
+
     return (
         <section id="heroSection" className="hero-section">
             <div className="hero-section-content-box">
@@ -16,7 +48,13 @@ export default function HeroSection() {
                     </p>
                 </div>
                 <span className="hero-section-buttons">
-                    <button className="btn btn-primary">Get In Touch</button>
+                    <Link
+                        onClick={closeMenu}
+                        activeClass="navbar-active-content"
+                        to="ContactMe"
+                        className="btn btn-primary">
+                        Contact Me
+                    </Link>
                     <button className="btn btn-primary">Download CV</button>
                 </span>
                 <span className="hero-section-links">
