@@ -1,13 +1,44 @@
+import {NavLink} from "react-router-dom";
+import {useEffect, useState} from "react";
+
 export default function HeroSection() {
+    const [navActive, setNavActive] = useState(false);
+
+    const toggleNav = () => {
+        setNavActive(!navActive);
+    };
+
+    const closeMenu = () => {
+        setNavActive(false);
+    };
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth <= 500) {
+                closeMenu();
+            }
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+    useEffect(() => {
+        if(window.innerWidth <= 1200) {
+            closeMenu();
+        }
+    }, []);
+
     return (
         <section id="heroSection" className="hero-section">
             <div className="hero-section-content-box">
                 <div className="hero-section-content">
-                    <p className="hero-section-title">Hello, I'm Alex Flinchum</p>
+                    <h3 className="hero-section-name">Hello, I'm Alex Flinchum</h3>
                     <h1 className="hero-section-title">
-                        <span className="hero-section-title-color">Full Stack</span>{" "}
-                        <br />
-                        Developer
+                        <span className="hero-section-title-color">Full-Stack </span>
+                        <span className="hero-section-title-sub-color">Developer</span>
                     </h1>
                     <p className="hero-section-description">
                         Full-stack developer with 6+ years building, testing, and delivering production software.
@@ -16,10 +47,29 @@ export default function HeroSection() {
                         in software engineering, systems thinking, and applied computing.
                     </p>
                 </div>
-                <button className="blur btn btn-primary">Get In Touch</button>
-                <button className="blur btn btn-primary">Download CV</button>
+                <span className="hero-section-buttons">
+                    <NavLink
+                        onClick={closeMenu}
+                        activeClass="navbar-active-content"
+                        to="/ContactMe"
+                        className="btn btn-primary">
+                        Contact Me
+                    </NavLink>
+                    <button className="btn btn-primary">Download CV</button>
+                </span>
+                <span className="hero-section-links">
+                    <a href=" " className="link" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/linkedin_img.png" alt="Linkedin"/>
+                    </a>
+                    <a href=" " className="link" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/github_img.png" alt="Github"/>
+                    </a>
+                    <a href=" " className="link" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/leetcode_img.png" alt="LeetCode"/>
+                    </a>
+                </span>
             </div>
-            <div className="hero-section-imgx">
+            <div className="hero-section-img">
                 <img src="./img/hero_img.png" alt="Hero Section Img"/>
             </div>
         </section>
