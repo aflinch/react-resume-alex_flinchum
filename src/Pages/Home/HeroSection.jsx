@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import {useEffect, useState} from "react";
 
 export default function HeroSection() {
@@ -48,13 +48,13 @@ export default function HeroSection() {
                     </p>
                 </div>
                 <span className="hero-section-buttons">
-                    <Link
+                    <NavLink
                         onClick={closeMenu}
                         activeClass="navbar-active-content"
                         to="/ContactMe"
                         className="btn btn-primary">
                         Contact Me
-                    </Link>
+                    </NavLink>
                     <button className="btn btn-primary">Download CV</button>
                 </span>
                 <span className="hero-section-links">
