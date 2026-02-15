@@ -3,44 +3,68 @@
     {
       "id": "1",
       "src": "./skill1.png",
-      "title": "Java Development",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
-      "id": "2",
-      "src": "./skill2.png",
-      "title": "GraphQL Development",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "title": "Java",
+      "description": "10 Years of Experience"
     },
     {
       "id": "3",
       "src": "./skill3.png",
-      "title": "API Development",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "title": "C#",
+      "description": "10 Years of Experience"
     },
     {
       "id": "4",
       "src": "./skill4.png",
-      "title": "C# Development",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "title": "SQL",
+      "description": "10 Years of Experience"
     },
     {
       "id": "5",
       "src": "./skill5.png",
-      "title": "React Development",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "title": "React",
+      "description": "10 Years of Experience"
     },
     {
       "id": "6",
       "src": "./skill6.png",
-      "title": "SQL Management",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "title": "Python",
+      "description": "10 Years of Experience"
     },
     {
       "id": "7",
       "src": "./skill7.png",
-      "title": "Postgres Management",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "title": "Postgres",
+      "description": "10 Years of Experience"
+    },
+    {
+      "id": "6",
+      "src": "./skill6.png",
+      "title": "Python",
+      "description": "10 Years of Experience"
+    },
+    {
+      "id": "6",
+      "src": "./skill6.png",
+      "title": "Python",
+      "description": "10 Years of Experience"
+    },
+    {
+      "id": "6",
+      "src": "./skill6.png",
+      "title": "Python",
+      "description": "10 Years of Experience"
+    },
+    {
+      "id": "6",
+      "src": "./skill6.png",
+      "title": "Python",
+      "description": "10 Years of Experience"
+    },
+    {
+      "id": "6",
+      "src": "./skill6.png",
+      "title": "Python",
+      "description": "10 Years of Experience"
     }
   ]
 }
