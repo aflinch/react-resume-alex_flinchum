@@ -7,7 +7,7 @@ export default function MySkills() {
                 <h3 className="skills-section-title">Expertise</h3>
                 <h2 className="skills-section-heading">My <span className="skills-section-sub-color">Skills</span></h2>
             </div>
-            <div className="skills-section-container">
+            <button className="skills-section-container">
                 {data?.skills?.map((item, index) => (
                     <div className="skills-section-card" key={index}>
                         <div className="skills-section-img">
@@ -19,7 +19,7 @@ export default function MySkills() {
                         </div>
                     </div>
                 ))}
-            </div>
+            </button>
         </section>
     )
 }
