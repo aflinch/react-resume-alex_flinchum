@@ -30,7 +30,10 @@ export default function MySkills() {
             </div>
             {showModel && <SkillsModel
                 skill={selectedSkill}
-                onClose={() => setShowModel(false)}
+                onClose={() => {
+                    setShowModel(false);
+                    setSelectedSkill(null);
+                }}
             />}
         </section>
     )
