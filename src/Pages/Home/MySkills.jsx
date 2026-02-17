@@ -1,9 +1,9 @@
 import data from '../../data/index.json';
 import SkillsModel from '../../Components/SkillsModel.jsx';
-import React from "react";
+import {useEffect, useState} from "react";
 
 export default function MySkills() {
-    const [showModel, setShowModel] = React.useState(false);
+    const [showModel, setShowModel] = useState(false);
 
     return (
         <section className="skills-section" id="mySkills">
