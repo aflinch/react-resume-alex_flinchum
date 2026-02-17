@@ -3,7 +3,7 @@ import SkillsModel from '../../Components/SkillsModel.jsx';
 import React from "react";
 
 export default function MySkills() {
-    const [showModel, setShowModel] = useState(false);
+    const [showModel, setShowModel] = React.useState(false);
 
     return (
         <section className="skills-section" id="mySkills">
