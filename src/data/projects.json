@@ -1,0 +1,10 @@
+{
+  "skills": [
+    {
+      "id": "1",
+      "src": "./skill1.png",
+      "title": "Java",
+      "description": "10 Years of Experience"
+    }
+  ]
+}
