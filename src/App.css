@@ -174,11 +174,13 @@ h3 {
 .hero-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 133.333px 85.333px 103.333px;
-    align-items: center;
+    padding: 233.333px 85.333px 103.333px;
+    align-items: start;
     justify-content: space-between;
     gap: 32px;
     background-color: var(--bg-shade);
+    height: 100vh;
+    box-sizing: border-box;
 }
 .hero-section-content-box {
     display: flex;

@@ -1,5 +1,5 @@
 import data from '../../data/index.json';
-import SkillsModel from '../../Components/SkillsModel.jsx';
+import SkillsModel from '../../Components/SkillsModel';
 import {useEffect, useState} from "react";
 
 export default function MySkills() {
