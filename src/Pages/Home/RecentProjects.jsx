@@ -1,9 +1,10 @@
-//import projects from '../../data/projects.json';
+import projects from '../../data/projects.json';
 import {useEffect, useState} from "react";
+import SkillsModel from "../../Components/SkillsModel";
 
-export default function MySkills() {
+export default function RecentProjects() {
     const [showModel, setShowModel] = useState(false);
-    const [selectedSkill, setSelectedSkill] = useState(null);
+    const [selectedSkill, setSelectedProject] = useState(null);
 
     return (
         <section className="projects-section" id="recentProjects">
@@ -15,6 +16,17 @@ export default function MySkills() {
                 </p>
             </div>
             <div className="skills-section-container">
+                {projects?.skills?.map((item, index) => (
+                    <div className="projects-section-card" key={index} >
+                        <div className="projects-section-img">
+                            <img src={item.src} alt="Project Img" />
+                        </div>
+                        <div className="projects-section-card-content">
+                            <h4 className="projects-section-card-title">{item.title}</h4>
+                            <p className="projects-section-card-description">{item.description}</p>
+                        </div>
+                    </div>
+                ))}
             </div>
         </section>
     )
