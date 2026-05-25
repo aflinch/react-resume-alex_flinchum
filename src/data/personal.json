@@ -6,7 +6,7 @@
       "title": "Course Management System",
       "tags": ["Java", "UML"],
       "description": "Engineered class hierarchies and reusable interfaces to model complex academic workflows.",
-      "link": "none"
+      "url": "none"
     },
     {
       "id": "2",
@@ -14,7 +14,7 @@
       "title": "Video Game Collection Database",
       "tags": ["SQL", "ERD"],
       "description": "Engineered a fully normalized database using ERD-based schema modeling and indexed foreign keys for speed.",
-      "link": "none"
+      "url": "none"
     },
     {
       "id": "3",
@@ -22,7 +22,7 @@
       "title": "Video Game Collection Database",
       "tags": ["SQL", "ERD"],
       "description": "Engineered a fully normalized database using ERD-based schema modeling and indexed foreign keys for speed.",
-      "link": "none"
+      "url": "https://github.com/aflinch/react-resume-alex_flinchum"
     }
   ]
 }

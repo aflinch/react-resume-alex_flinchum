@@ -1,10 +1,7 @@
 import personal from '../../data/personal.json';
-import {useEffect, useState} from "react";
-import SkillsModel from "../../Components/SkillsModel";
+import { Github } from 'lucide-react';
 
 export default function RecentProjects() {
-    const [showModel, setShowModel] = useState(false);
-    const [selectedSkill, setSelectedProject] = useState(null);
 
     return (
         <section className="projects-section" id="recentProjects">
@@ -34,6 +31,11 @@ export default function RecentProjects() {
                                 ))}
                             </div>
                             <p className="projects-section-card-description">{item.description}</p>
+                            {item.url && item.url !== "none" && (
+                                <a href={item.url} target="_blank" rel="noreferrer" className="project-card-link">
+                                    <Github />
+                                </a>
+                            )}
                         </div>
                     </div>
                 ))}
