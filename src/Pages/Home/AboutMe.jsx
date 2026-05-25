@@ -6,7 +6,7 @@ export default function AboutMe() {
     return (
         <section id="aboutMe" className="about-section">
             <div className="about-section-content-box">
-                <div className="about-contianer">
+                <div className="about-container">
                     <h2 className="about-section-heading">About <span className="about-section-sub-color">Me</span></h2>
                 </div>
                 <div className="about-section-container">
