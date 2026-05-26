@@ -50,10 +50,25 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .link {
-    width: 28px;
-    height: 28px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     border: 2px solid var(--heading-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.link img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%);
+}
+.link svg {
+    width: 20px;
+    height: 20px;
+    color: var(--heading-color);
 }
 
 /* Main Headings */
@@ -175,7 +190,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: clamp(110px, 14vh, 233.333px);
-    align-items: start;
+    align-items: center;
     justify-content: space-between;
     gap: 32px;
     background-color: var(--bg-shade);
@@ -228,7 +243,7 @@ h3 {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 100.333px;
+    gap: 85.333px;
     margin-top: 33px;
 }
 .hero-section-img {
