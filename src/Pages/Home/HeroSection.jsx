@@ -43,7 +43,7 @@ export default function HeroSection() {
                     </h1>
                     <p className="hero-section-description">
                         Crafting reliable enterprise applications with Java, React, and GraphQL.
-                        Grounded in strong engineering principles, driven by automation.
+                        <br />Grounded in strong engineering principles, driven by automation.
                     </p>
                 </div>
                 <span className="hero-section-buttons">

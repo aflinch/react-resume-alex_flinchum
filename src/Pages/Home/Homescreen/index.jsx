@@ -1,7 +1,8 @@
-import HeroSection from "../HeroSection";
-import AboutMe from "../AboutMe";
-import MySkills from "../MySkills";
-import RecentProjects from "../RecentProjects";
+import HeroSection from '../HeroSection';
+import AboutMe from '../AboutMe';
+import MySkills from '../MySkills';
+import RecentProjects from '../RecentProjects';
+import Footer from '../../../Components/Footer';
 
 export default function Home () {
     return (
@@ -10,6 +11,7 @@ export default function Home () {
             <AboutMe />
             <MySkills />
             <RecentProjects />
+            <Footer />
         </>
     )
 }
