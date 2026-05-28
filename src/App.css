@@ -338,13 +338,9 @@ h3 {
     width: 100%;
 }
 .about-section-img {
-    flex: 1;
+    flex: 0.65;
     display: flex;
     justify-content: flex-start;
-}
-.about-section-img img {
-    width: 100%;
-    max-width: 500px;
 }
 .about-section-description {
     color: var(--darkblue);
@@ -358,7 +354,7 @@ h3 {
     color: var(--heading-color);
     gap: 30px;
     padding-top: 10px;
-    padding-left: 32px;
+    padding-left: 12px;
 }
 .about-experience {
     color: var(--primary);
@@ -368,7 +364,7 @@ h3 {
 /* Skills Section */
 .skills-section {
     display: flex;
-    padding: 35px 85.333px 85.333px;
+    padding: 15px 85.333px 85.333px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -464,9 +460,11 @@ h3 {
 }
 .footer-contact-title {
     margin-bottom: 10.333px;
+    color: var(--heading-color);
 }
 .footer-contact-info {
     display: flex;
+    color: var(--heading-color);
     gap: 8px;
     margin-bottom: 8.33px;
     font-size: 15px;
@@ -480,6 +478,9 @@ h3 {
     height: 1.333px;
     width: 100%;
     background: rgba(40, 41, 56, 0.55);
+}
+.footer-section-copyright {
+    color: var(--heading-color);
 }
 
 /* Modal */
