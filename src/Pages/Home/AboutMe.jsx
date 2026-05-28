@@ -8,7 +8,7 @@ export default function AboutMe() {
                     <h2 className="about-section-heading">About <span className="about-section-sub-color">Me</span></h2>
                 </div>
                 <div className="about-section-container">
-                    <div className="hero-section-img">
+                    <div className="about-section-img">
                         <img src="./img/about_img.png" alt="About Me Img"/>
                     </div>
                     <p className="about-section-description">
