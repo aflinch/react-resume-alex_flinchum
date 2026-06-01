@@ -24,9 +24,12 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .title-divider {
-    height: 2.333px;
+    height: 1.333px;
     width: 100%;
     background: var(--primary-shadow);
+}
+.sub-color {
+    color: var(--primary);
 }
 .btn {
     font-family: "Arial", Helvetica, sans-serif;
@@ -310,6 +313,7 @@ h3 {
 }
 .about-section-sub-color {
     color: var(--primary);
+    text-decoration: underline;
 }
 .about-section-title {
     color: var(--heading-color);
