@@ -2,6 +2,8 @@ import {NavLink} from "react-router-dom";
 import {useEffect, useState} from "react";
 import { Github, Linkedin } from 'lucide-react';
 import {TypewriterTitle} from "../../Components/TypeWriter";
+import heroSectionImg from "../../data/img/hero-section-img.png";
+import resumePdf from "../../data/Flinchum, Alex - Resume.pdf";
 
 const titles = ["Full-Stack Developer", "Gameplay Designer", "Software-Test Engineer"];
 
@@ -54,7 +56,7 @@ export default function HeroSection() {
                         className="btn btn-primary">
                         Contact Me
                     </NavLink>
-                    <a href="../../data/Flinchum, Alex - Resume.pdf" download="Flinchum, Alex - Resume.pdf" className="btn btn-primary">Download CV</a>
+                    <a href={resumePdf} download="Flinchum, Alex - Resume.pdf" className="btn btn-primary">Download CV</a>
                 </span>
                 <span className="hero-section-links">
                     <a href="https://www.linkedin.com/in/alexflinchum/" className="link" target="_blank" rel="noopener noreferrer">
@@ -69,7 +71,7 @@ export default function HeroSection() {
                 </span>
             </div>
             <div className="hero-section-img">
-                <img src="../../data/img/hero-section-img.png" alt="Hero Section Img"/>
+                <img src={heroSectionImg} alt="Hero Section Img"/>
             </div>
         </section>
     )

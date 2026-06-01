@@ -1,4 +1,5 @@
 import React from "react";
+import aboutSectionImg from "../../data/img/about-section-img.png";
 
 export default function AboutMe() {
 
@@ -8,11 +9,11 @@ export default function AboutMe() {
                 <div className="about-container">
                     <h2 className="about-section-heading">About<span className="about-section-sub-color">.</span></h2>
                     <hr className="title-divider" />
-                    <h3 className="about-section-title">A Passionate Developer</h3>
+                    <h3 className="about-section-title">A Passionate <span className="about-section-sub-color">Developer</span></h3>
                 </div>
                 <div className="about-section-container">
                     <div className="about-section-img">
-                        <img src="../../data/img/about-section-img.png" alt="About Me Img"/>
+                        <img src="" alt="About Me Img"/>
                     </div>
                     <div className="about-section-content-column">
                         <div className="about-section-info">

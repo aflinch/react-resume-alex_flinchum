@@ -140,7 +140,7 @@ h3 {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 2;
 }
 .navbar-brand {
     display: flex;
@@ -164,7 +164,7 @@ h3 {
 }
 .navbar-content {
     color: var(--darkblue);
-    font-size: 17px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: 24px;
@@ -205,6 +205,7 @@ h3 {
     min-height: 100vh;
     width: 100%;
     box-sizing: border-box;
+    position: relative;
     overflow: hidden;
 }
 .hero-section::after {
@@ -214,10 +215,9 @@ h3 {
     right: -15%;
     transform: translateY(-50%) rotate(25deg);
     width: 55%;
-    height: 155%;
+    height: 215%;
     border-radius: 95%;
     background: var(--primary-shadow);
-    z-index: 0;
     pointer-events: none;
 }
 .hero-section-content-box {
@@ -271,17 +271,28 @@ h3 {
     margin-top: 33px;
 }
 .hero-section-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60%;
+    height: 95%;
     display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 1;
 }
+
 .hero-section-img img {
     width: 100%;
     height: 100%;
+    object-fit: contain;
+    object-position: bottom;
 }
 
 /* About Me Section */
 .about-section {
     position: relative;
-    background-color: var(--white);
+    background-color: var(--off-white);
     z-index: 0;
 }
 .about-section-content {
