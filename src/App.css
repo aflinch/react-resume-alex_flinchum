@@ -23,6 +23,11 @@ h1,h2,h3,h4,h5,h6,p {
     --off-white: #fafafa;
 }
 
+.title-divider {
+    height: 2.333px;
+    width: 100%;
+    background: var(--primary-shadow);
+}
 .btn {
     font-family: "Arial", Helvetica, sans-serif;
     padding: 12px 20px;
@@ -197,8 +202,23 @@ h3 {
     justify-content: space-between;
     gap: 32px;
     background-color: var(--bg-shade);
-    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
     box-sizing: border-box;
+    overflow: hidden;
+}
+.hero-section::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -15%;
+    transform: translateY(-50%) rotate(25deg);
+    width: 55%;
+    height: 155%;
+    border-radius: 95%;
+    background: var(--primary-shadow);
+    z-index: 0;
+    pointer-events: none;
 }
 .hero-section-content-box {
     display: flex;
@@ -259,6 +279,11 @@ h3 {
 }
 
 /* About Me Section */
+.about-section {
+    position: relative;
+    background-color: var(--white);
+    z-index: 0;
+}
 .about-section-content {
     display: flex;
     padding: 15px 12vh 35.333px;
@@ -294,6 +319,7 @@ h3 {
     width: 100%;
     background: var(--bg-shade);
     border-radius: 20px;
+    z-index: 2;
 }
 .about-section-description-title {
     color: var(--heading-color);

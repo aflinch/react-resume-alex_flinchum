@@ -1,3 +1,4 @@
+import React from "react";
 
 export default function AboutMe() {
 
@@ -6,6 +7,7 @@ export default function AboutMe() {
             <div className="about-section-content">
                 <div className="about-container">
                     <h2 className="about-section-heading">About<span className="about-section-sub-color">.</span></h2>
+                    <hr className="title-divider" />
                     <h3 className="about-section-title">A Passionate Developer</h3>
                 </div>
                 <div className="about-section-container">
