@@ -11,15 +11,16 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 :root {
-    --primary: #5e3bee;
-    --primary-shadow: #5e3beebf;
-    --heading-color: #282938;
-    --bg-shade: #f5fcff;
-    --github: #e62872;
-    --darkblue: #1c1e53;
+    --primary: #3470cc;
+    --primary-shadow: #3470ccbf;
+    --heading-color: #1a1c23;
+    --bg-shade: #f4f6f9;
+    --github: #4a5568;
+    --darkblue: #0f111a;
+
     --black: #000000;
     --white: #ffffff;
-    --off-white: #f0f0f0;
+    --off-white: #fafafa;
 }
 
 .btn {
@@ -190,8 +191,8 @@ h3 {
 /* Hero Section */
 .hero-section {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: clamp(110px, 14vh, 233.333px);
+    grid-template-columns: 1.5fr 1fr;
+    padding: clamp(100px, 12vh, 233.333px);
     align-items: center;
     justify-content: space-between;
     gap: 32px;
@@ -209,7 +210,7 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 21.333px;
+    gap: 20.333px;
 }
 .hero-section-name {
     color: var(--heading-color);
@@ -221,10 +222,11 @@ h3 {
 }
 .hero-section-title {
     color: var(--heading-color);
-    font-size: 74.667px;
+    font-size: clamp(40px, 6vw, 74.667px);
     font-weight: 700;
-    line-height: 90px;
-    align-self: stretch
+    line-height: 1.2;
+    align-self: stretch;
+    white-space: nowrap;
 }
 .hero-section-title-sub-color {
     color: var(--primary);
