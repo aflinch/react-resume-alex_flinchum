@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
 
 export default function AboutMe() {
 
@@ -44,6 +45,11 @@ export default function AboutMe() {
                                 I'm especially interested in software architecture, developer productivity, and the ways
                                 emerging technologies can help teams build better products.
                             </p>
+                            <NavLink
+                                className="about-info-link"
+                                to="/MyResume">
+                                LEARN MORE
+                            </NavLink>
                         </div>
 
 
@@ -62,6 +68,11 @@ export default function AboutMe() {
                                 personal project or learning a new framework, I enjoy creating things that challenge me to
                                 grow as both a developer and a problem solver.
                             </p>
+                            <NavLink
+                                className="about-info-link"
+                                to="/MyProjects">
+                                BROWSE PROJECTS
+                            </NavLink>
                         </div>
                     </div>
                 </div>

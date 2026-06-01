@@ -184,6 +184,7 @@ h3 {
     font-style: normal;
     font-weight: 600;
     line-height: 24px;
+    text-decoration: none;
     cursor: pointer;
     position: relative;
     transition: color 0.3s ease;
@@ -207,6 +208,16 @@ h3 {
 }
 .navbar-active-content {
     color: var(--primary);
+}
+.link-content {
+    color: var(--primary);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
 }
 
 /* Hero Section */
@@ -383,6 +394,29 @@ h3 {
     color: var(--heading-color);
     gap: 12px;
     flex: 1;
+}
+.about-info-block {
+    margin-bottom: 17px;
+}
+.about-info-link {
+    background-image: linear-gradient(var(--primary), var(--primary));
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0 2px;
+    color: var(--primary);
+    display: inline-block;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    position: relative;
+    text-decoration: none;
+    transition: background-size 0.3s ease-out;
+    width: fit-content;
+}
+.about-info-link:hover {
+    color: var(--primary);
+    background-size: 100% 2px;
 }
 .about-experience-section {
     display: flex;
