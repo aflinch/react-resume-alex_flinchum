@@ -67,7 +67,7 @@ export default function SkillsSection() {
     return (
         <section className="skills-section" id="mySkills">
             <div className="skills-section-content">
-                <div className="skills-contianer">
+                <div className="skills-container">
                     <div className="section-heading-row">
                         <h2 className="skills-section-heading">SKILLS<span className="sub-color">.</span></h2>
                         <hr className="title-divider" />
@@ -101,6 +101,7 @@ export default function SkillsSection() {
                                 <div className="skills-section-card-progress-bar">
                                     <div className="skills-section-card-progress" style={{ width: `${item.level}%` }}></div>
                                 </div>
+                                <p className="skills-section-card-progress-num">{item.level}%</p>
                             </div>
                         );
                     })
