@@ -30,5 +30,4 @@ const personal = {
   ]
 };
 
-export { personal };
 export default personal;

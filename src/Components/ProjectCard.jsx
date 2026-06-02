@@ -9,18 +9,18 @@ function ProjectCard({ item }) {
                 <img src={item.src} alt="Project Img" />
             </div>
             <div className="projects-section-card-content">
-                <h4 className="projects-section-card-title">{item.title}</h4>
                 <div className="projects-section-card-tags-container">
                     {item.tags.map((tag, tagIndex) => (
                         <span className="projects-section-card-tag" key={tagIndex}>
-                                            {tag}
-                                        </span>
+                            {tag}
+                        </span>
                     ))}
                 </div>
+                <h4 className="projects-section-card-title">{item.title}</h4>
                 <p className="projects-section-card-description">{item.description}</p>
                 {item.url && item.url !== "none" && (
                     <a href={item.url} target="_blank" rel="noreferrer" className="project-card-link">
-                        <Github />
+                        <Github /> View in Github
                     </a>
                 )}
             </div>
