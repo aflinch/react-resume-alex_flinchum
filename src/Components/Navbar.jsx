@@ -38,12 +38,6 @@ function Navbar() {
                 <img className="logo" src={logo} alt="Logo" />
                 <h3 className="navbar-title">Alex.</h3>
             </div>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a className={`nav_hamburger ${navActive ? "active" : ""}`} onClick={toggleNav}>
-                <span className="nav_hameburger_line"></span>
-                <span className="nav_hameburger_line"></span>
-                <span className="nav_hameburger_line"></span>
-            </a>
             <div className={`navbar-items ${navActive ? "active" : ""}`}>
                 <ul>
                     <li>
