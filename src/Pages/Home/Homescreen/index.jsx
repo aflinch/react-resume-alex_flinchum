@@ -1,16 +1,16 @@
 import HeroSection from '../HeroSection';
-import AboutMe from '../AboutMe';
-import MySkills from '../MySkills';
-import RecentProjects from '../RecentProjects';
+import AboutSection from '../AboutSection';
+import SkillsSection from '../SkillsSection';
+import RecentProjectsSection from '../RecentProjectsSection';
 import Footer from '../../../Components/Footer';
 
 export default function Home () {
     return (
         <>
             <HeroSection />
-            <AboutMe />
-            <MySkills />
-            <RecentProjects />
+            <AboutSection />
+            <SkillsSection />
+            <RecentProjectsSection />
             <Footer />
         </>
     )

@@ -2,7 +2,7 @@ import personal from '../../data/personal.js';
 import React from "react";
 import ProjectCard from "../../Components/ProjectCard";
 
-export default function RecentProjects() {
+export default function RecentProjectsSection() {
 
     return (
         <section className="projects-section" id="recentProjects">
