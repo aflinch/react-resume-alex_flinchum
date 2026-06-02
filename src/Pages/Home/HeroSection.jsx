@@ -3,16 +3,13 @@ import {useEffect, useState} from "react";
 import { Github, Linkedin } from 'lucide-react';
 import {TypewriterTitle} from "../../Components/TypeWriter";
 import heroSectionImg from "../../data/img/hero-section-img.png";
+import leetCodeLogo from "../../data/img/icons8-leetcode-24.png";
 import resumePdf from "../../data/Flinchum, Alex - Resume.pdf";
 
 const titles = ["Full-Stack Developer", "Gameplay Designer", "Software-Test Engineer"];
 
 export default function HeroSection() {
     const [navActive, setNavActive] = useState(false);
-
-    const toggleNav = () => {
-        setNavActive(!navActive);
-    };
 
     const closeMenu = () => {
         setNavActive(false);
@@ -65,8 +62,8 @@ export default function HeroSection() {
                     <a href="https://github.com/aflinch" className="link" target="_blank" rel="noopener noreferrer">
                         <Github />
                     </a>
-                    <a href=" " className="link" target="_blank" rel="noopener noreferrer">
-                        <img src="./img/leetcode_img.png" alt="LeetCode"/>
+                    <a href="https://leetcode.com/u/allflinch/" className="link" target="_blank" rel="noopener noreferrer">
+                        <img src={leetCodeLogo} alt="LeetCode"/>
                     </a>
                 </span>
             </div>

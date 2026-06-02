@@ -1,5 +1,6 @@
 import React from 'react';
 import {Phone, Mail} from 'lucide-react';
+import logo from "../data/img/logo.png";
 
 function Footer() {
 
@@ -7,7 +8,7 @@ function Footer() {
         <footer className="footer-section">
             <div className="footer-top-container">
                 <div className="footer-brand">
-                    <img src="./img/logo.png" alt="Logo" />
+                    <img className="logo-footer" src={logo} alt="Logo" />
                     <h3 className="footer-title">Alex.</h3>
                 </div>
 

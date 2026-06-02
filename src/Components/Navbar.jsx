@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import logo from "../data/img/logo.png";
 
 function Navbar() {
     const [navActive, setNavActive] = useState(false);
@@ -34,7 +35,7 @@ function Navbar() {
     return (
         <nav className={`navbar ${navActive ? "active" : ""}`}>
             <div className="navbar-brand">
-                <img src="./img/logo.png" alt="Logo" />
+                <img className="logo" src={logo} alt="Logo" />
                 <h3 className="navbar-title">Alex.</h3>
             </div>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
