@@ -1,7 +1,7 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
 
-export default function AboutMe() {
+export default function AboutSection() {
 
     return (
         <section id="aboutMe" className="about-section">

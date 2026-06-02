@@ -5,7 +5,7 @@ import { FaJava, FaPython, FaReact, FaDatabase } from "react-icons/fa";
 import { SiPostgresql, SiJavascript } from "react-icons/si";
 import { TbBrandCSharp } from "react-icons/tb";
 
-export default function MySkills() {
+export default function SkillsSection() {
     const [showModel, setShowModel] = useState(false);
     const [selectedSkill, setSelectedSkill] = useState(null);
 
