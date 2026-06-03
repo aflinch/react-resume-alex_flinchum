@@ -1,5 +1,6 @@
 import React from "react";
 import {Github, Linkedin, Mail, Phone} from "lucide-react";
+import {ContactForm} from "../../Components/ContactForm";
 
 export default function ContactSection() {
 
@@ -30,7 +31,11 @@ export default function ContactSection() {
                     <a href="https://github.com/aflinch" className="link" target="_blank" rel="noopener noreferrer">
                         <Github />
                     </a>
-                </span>
+                    </span>
+                </div>
+
+                <div className="contact-form">
+                    <ContactForm />
                 </div>
             </div>
         </section>
