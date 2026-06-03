@@ -13,7 +13,7 @@ export default function AboutSection() {
                         <h2 className="about-section-heading">ABOUT<span className="sub-color">.</span></h2>
                         <hr className="title-divider" />
                     </div>
-                    <h3 className="about-section-title">A Passionate <span className="about-section-sub-color">Developer</span></h3>
+                    <h3 className="about-section-title">A Passionate <span className="sub-color">Developer</span></h3>
                 </div>
 
                 <div className="about-section-content-column">

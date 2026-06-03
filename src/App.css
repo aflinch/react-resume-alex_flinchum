@@ -72,17 +72,17 @@ h1,h2,h3,h4,h5,h6,p {
 
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.logo {
+.logo, .logo-footer {
     width: 55.333px;
     height: auto;
     display: flex;
     align-items: center;
 }
+.logo {
+    width: 55.333px;
+}
 .logo-footer {
     width: 3%;
-    height: auto;
-    display: flex;
-    align-items: center;
 }
 .btn {
     color: var(--primary);
@@ -801,6 +801,13 @@ h3 {
 }
 .modal-body {
     margin-top: 10px;
+}
+.modal-body p {
+    color: var(--darkblue);
+    font-size: 17px;
+    line-height: 23px;
+    padding-top: 10px;
+    position: relative;
 }
 .modal-header-section {
     display: flex;
