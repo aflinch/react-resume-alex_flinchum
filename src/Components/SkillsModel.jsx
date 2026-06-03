@@ -27,7 +27,9 @@ function SkillsModel({ skill, iconComponent, onClose }) {
                            ?.slice(0, 4)
                            .map((item) => (
                                <div key={item.id} >
-                                   <NavLink className="model-projects-img" to="/MyProjects">
+                                   <NavLink 
+                                       className="model-projects-img"
+                                       to="/MyProjects">
                                        <img src={item.src} alt="Project Img" />
                                    </NavLink>
                                    <div className="model-projects-content">
