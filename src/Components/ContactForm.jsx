@@ -24,9 +24,11 @@ export const ContactForm = () => {
 
     return (
         <form ref={form} onSubmit={sendEmail}>
-            <label>Name</label>
-            <input type="text" name="from_first_name" required />
-            <input type="text" name="from_last_name"/>
+            <div>
+                <label>Name</label>
+                <input type="text" name="from_first_name" required />
+                <input type="text" name="from_last_name"/>
+            </div>
 
             <label>Email</label>
             <input type="email" name="from_email" required />
