@@ -767,6 +767,18 @@ h3 {
     position: relative;
     overflow: hidden;
 }
+.contact-section::after {
+    content: "";
+    position: absolute;
+    top: 130%;
+    right: -85%;
+    transform: translateY(-50%) rotate(175deg);
+    width: 200%;
+    height: 215%;
+    border-radius: 500%;
+    background: var(--primary-shadow);
+    pointer-events: none;
+}
 .contact-section-content {
     display: flex;
     padding: 105px 12vh 0;
@@ -782,6 +794,7 @@ h3 {
     border-radius: 5px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
     min-height: 550px;
+    z-index: 2;
 }
 .contact-info-section {
     flex: 1.1;
