@@ -1,5 +1,6 @@
 import React from 'react';
-import {Phone, Mail, Linkedin, Instagram} from 'lucide-react';
+import { Phone, Mail, Linkedin } from 'lucide-react';
+import { SiInstagram } from "react-icons/si";
 import logo from "../data/img/logo.png";
 
 function Footer() {
@@ -25,7 +26,7 @@ function Footer() {
                             <Linkedin />
                         </a>
                         <a href=" " className="footer-contact-info" target="_blank" rel="noopener noreferrer">
-                            <Instagram />
+                            <SiInstagram />
                         </a>
                     </div>
                 </div>

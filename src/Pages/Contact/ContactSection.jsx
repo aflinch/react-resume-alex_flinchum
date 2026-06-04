@@ -1,5 +1,6 @@
 import React from "react";
-import {Github, Linkedin, Mail, Phone, Instagram} from "lucide-react";
+import { Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { SiGithub, SiInstagram } from "react-icons/si";
 import {ContactForm} from "../../Components/ContactForm";
 
 export default function ContactSection() {
@@ -24,16 +25,19 @@ export default function ContactSection() {
                         <span className="contact-info">
                             <Mail /> alexanderflinchum@gmail.com
                         </span>
+                        <span className="contact-info">
+                            <MapPin /> Austin, TX (CST)
+                        </span>
 
                         <span className="hero-section-links">
                             <a href="https://www.linkedin.com/in/alexflinchum/" className="link" target="_blank" rel="noopener noreferrer">
                                 <Linkedin />
                             </a>
                             <a href=" " className="link" target="_blank" rel="noopener noreferrer">
-                                <Instagram />
+                                <SiInstagram />
                             </a>
                             <a href="https://github.com/aflinch" className="link" target="_blank" rel="noopener noreferrer">
-                                <Github />
+                                <SiGithub />
                             </a>
                         </span>
                     </div>
