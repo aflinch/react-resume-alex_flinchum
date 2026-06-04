@@ -1,5 +1,6 @@
 import React from "react";
-import { Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
+import { FaLinkedin } from "react-icons/fa6";
 import { SiGithub, SiInstagram } from "react-icons/si";
 import {ContactForm} from "../../Components/ContactForm";
 
@@ -31,7 +32,7 @@ export default function ContactSection() {
 
                         <span className="hero-section-links">
                             <a href="https://www.linkedin.com/in/alexflinchum/" className="link" target="_blank" rel="noopener noreferrer">
-                                <Linkedin />
+                                <FaLinkedin />
                             </a>
                             <a href=" " className="link" target="_blank" rel="noopener noreferrer">
                                 <SiInstagram />

@@ -1,10 +1,9 @@
 import {NavLink} from "react-router-dom";
 import React, {useEffect, useState} from "react";
-import { Linkedin } from 'lucide-react';
-import { SiGithub, SiInstagram } from "react-icons/si";
+import { SiGithub, SiInstagram, SiLeetcode } from "react-icons/si";
+import { FaLinkedin } from "react-icons/fa6";
 import {TypewriterTitle} from "../../Function/TypeWriter";
 import heroSectionImg from "../../data/img/hero-section-img.png";
-import leetCodeLogo from "../../data/img/icons8-leetcode-24.png";
 import resumePdf from "../../data/Flinchum, Alex - Resume.pdf";
 
 const titles = ["Full-Stack Developer", "Gameplay Designer", "Software-Test Engineer"];
@@ -58,7 +57,7 @@ export default function HeroSection() {
                 </span>
                 <span className="hero-section-links">
                     <a href="https://www.linkedin.com/in/alexflinchum/" className="link" target="_blank" rel="noopener noreferrer">
-                        <Linkedin />
+                        <FaLinkedin />
                     </a>
                     <a href=" " className="link" target="_blank" rel="noopener noreferrer">
                         <SiInstagram />
@@ -67,7 +66,7 @@ export default function HeroSection() {
                         <SiGithub />
                     </a>
                     <a href="https://leetcode.com/u/allflinch/" className="link" target="_blank" rel="noopener noreferrer">
-                        <img src={leetCodeLogo} alt="LeetCode"/>
+                        <SiLeetcode />
                     </a>
                 </span>
             </div>

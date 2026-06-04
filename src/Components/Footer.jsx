@@ -1,5 +1,6 @@
 import React from 'react';
-import { Phone, Mail, Linkedin } from 'lucide-react';
+import { Phone, Mail } from 'lucide-react';
+import { FaLinkedin } from "react-icons/fa6";
 import { SiInstagram } from "react-icons/si";
 import logo from "../data/img/logo.png";
 
@@ -23,7 +24,7 @@ function Footer() {
                     </span>
                     <div className="footer-social">
                         <a href="https://www.linkedin.com/in/alexflinchum/" className="footer-contact-info" target="_blank" rel="noopener noreferrer">
-                            <Linkedin />
+                            <FaLinkedin />
                         </a>
                         <a href=" " className="footer-contact-info" target="_blank" rel="noopener noreferrer">
                             <SiInstagram />
