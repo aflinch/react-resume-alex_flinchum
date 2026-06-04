@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import logo from "../data/img/logo.png";
 
 function Navbar() {
     const [navActive, setNavActive] = useState(false);
@@ -34,15 +35,9 @@ function Navbar() {
     return (
         <nav className={`navbar ${navActive ? "active" : ""}`}>
             <div className="navbar-brand">
-                <img src="./img/logo.png" alt="Logo" />
+                <img className="logo" src={logo} alt="Logo" />
                 <h3 className="navbar-title">Alex.</h3>
             </div>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a className={`nav_hamburger ${navActive ? "active" : ""}`} onClick={toggleNav}>
-                <span className="nav_hameburger_line"></span>
-                <span className="nav_hameburger_line"></span>
-                <span className="nav_hameburger_line"></span>
-            </a>
             <div className={`navbar-items ${navActive ? "active" : ""}`}>
                 <ul>
                     <li>
@@ -53,7 +48,7 @@ function Navbar() {
                                     ? "navbar-content navbar-active-content"
                                     : "navbar-content"
                             }
-                            to="/Home">
+                            to="/">
                             Home
                         </NavLink>
                     </li>
@@ -77,8 +72,20 @@ function Navbar() {
                                     ? "navbar-content navbar-active-content"
                                     : "navbar-content"
                             }
-                            to="/AboutMe">
-                            About
+                            to="/MyProjects">
+                            Projects
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            onClick={closeMenu}
+                            className={({ isActive }) =>
+                                isActive
+                                    ? "navbar-content navbar-active-content"
+                                    : "navbar-content"
+                            }
+                            to="/Contact">
+                            Contact
                         </NavLink>
                     </li>
                 </ul>

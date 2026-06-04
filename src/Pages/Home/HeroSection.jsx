@@ -1,12 +1,15 @@
 import {NavLink} from "react-router-dom";
 import {useEffect, useState} from "react";
+import { Github, Linkedin } from 'lucide-react';
+import {TypewriterTitle} from "../../Components/TypeWriter";
+import heroSectionImg from "../../data/img/hero-section-img.png";
+import leetCodeLogo from "../../data/img/icons8-leetcode-24.png";
+import resumePdf from "../../data/Flinchum, Alex - Resume.pdf";
+
+const titles = ["Full-Stack Developer", "Gameplay Designer", "Software-Test Engineer"];
 
 export default function HeroSection() {
     const [navActive, setNavActive] = useState(false);
-
-    const toggleNav = () => {
-        setNavActive(!navActive);
-    };
 
     const closeMenu = () => {
         setNavActive(false);
@@ -36,41 +39,36 @@ export default function HeroSection() {
             <div className="hero-section-content-box">
                 <div className="hero-section-content">
                     <h3 className="hero-section-name">Hello, I'm Alex Flinchum</h3>
-                    <h1 className="hero-section-title">
-                        <span className="hero-section-title-color">Full-Stack </span>
-                        <span className="hero-section-title-sub-color">Developer</span>
-                    </h1>
+                    <TypewriterTitle texts={titles} />
                     <p className="hero-section-description">
-                        Full-stack developer with 6+ years building, testing, and delivering production software.
-                        <br /> I hold a Master’s degree in Software Development from Boston University
-                        and an undergraduate degree in Informatics from Indiana University, providing a strong foundation
-                        in software engineering, systems thinking, and applied computing.
+                        Designing interactive worlds, building scalable web apps, and breaking code to make it better.
+                        <br />Where creative logic meets rigorous technical execution.
                     </p>
                 </div>
                 <span className="hero-section-buttons">
                     <NavLink
                         onClick={closeMenu}
                         activeClass="navbar-active-content"
-                        to="/ContactMe"
+                        to="/Contact"
                         className="btn btn-primary">
                         Contact Me
                     </NavLink>
-                    <button className="btn btn-primary">Download CV</button>
+                    <a href={resumePdf} download="Flinchum, Alex - Resume.pdf" className="btn btn-primary">Download CV</a>
                 </span>
                 <span className="hero-section-links">
-                    <a href=" " className="link" target="_blank" rel="noopener noreferrer">
-                        <img src="./img/linkedin_img.png" alt="Linkedin"/>
+                    <a href="https://www.linkedin.com/in/alexflinchum/" className="link" target="_blank" rel="noopener noreferrer">
+                        <Linkedin />
                     </a>
-                    <a href=" " className="link" target="_blank" rel="noopener noreferrer">
-                        <img src="./img/github_img.png" alt="Github"/>
+                    <a href="https://github.com/aflinch" className="link" target="_blank" rel="noopener noreferrer">
+                        <Github />
                     </a>
-                    <a href=" " className="link" target="_blank" rel="noopener noreferrer">
-                        <img src="./img/leetcode_img.png" alt="LeetCode"/>
+                    <a href="https://leetcode.com/u/allflinch/" className="link" target="_blank" rel="noopener noreferrer">
+                        <img src={leetCodeLogo} alt="LeetCode"/>
                     </a>
                 </span>
             </div>
             <div className="hero-section-img">
-                <img src="./img/hero_img.png" alt="Hero Section Img"/>
+                <img src={heroSectionImg} alt="Hero Section Img"/>
             </div>
         </section>
     )
