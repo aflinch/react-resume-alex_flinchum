@@ -1179,74 +1179,24 @@ h3 {
         font-size: 15px;
     }
 }
-
-@media (max-width: 1024px) {
+@media (max-width: 1385px) {
     .hero-section-title {
-        font-size: 42px;
-        line-height: 1.15;
-        white-space: normal;
+        font-size: 48.667px;
     }
-
-    .hero-section-description {
-        font-size: 16px;
-        line-height: 24px;
-    }
-
-    .timeline-card-title h3 {
-        font-size: 22px;
-        line-height: 28px;
-    }
-
-    .timeline-card ul,
-    .timeline-card ul li {
-        font-size: 15px;
-        line-height: 22px;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero-section-title {
-        font-size: 42px;
-        line-height: 1.15;
-        white-space: normal;
-    }
-
-    .hero-section-description {
-        font-size: 16px;
-        line-height: 24px;
-    }
-
-    .timeline-card-title h3 {
-        font-size: 22px;
-        line-height: 28px;
-    }
-
-    .timeline-card ul,
-    .timeline-card ul li {
-        font-size: 15px;
-        line-height: 22px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-section-title {
-        font-size: 34px;
-        line-height: 1.1;
-    }
-
     .hero-section-description {
         font-size: 15px;
-        line-height: 22px;
     }
-
-    .timeline-card-title h3 {
-        font-size: 12px;
-        line-height: 24px;
-    }
-
-    .timeline-card ul,
-    .timeline-card ul li {
+    .about-info-block p {
         font-size: 14px;
-        line-height: 20px;
+    }
+    .experience-section-card-tag {
+        font-size: 11px;
+    }
+    .timeline-card-title h3 {
+        font-size: 16px;
+    }
+    .timeline-card ul,
+    .timeline-card ul li {
+        font-size: 15px;
     }
 }
