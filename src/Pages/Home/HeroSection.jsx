@@ -9,10 +9,8 @@ import resumePdf from "../../data/Flinchum, Alex - Resume.pdf";
 const titles = ["Full-Stack Developer", "Gameplay Designer", "Software-Test Engineer"];
 
 export default function HeroSection() {
-    // FIX 1: Corrected state array destructuring to include both value and setter
-    const [navActive, setNavActive] = useState(false);
+    const [, setNavActive] = useState(false);
 
-    // FIX 2: Wrapped in useCallback so it maintains reference integrity across renders
     const closeMenu = useCallback(() => {
         setNavActive(false);
     }, []);
@@ -35,7 +33,7 @@ export default function HeroSection() {
         if (window.innerWidth <= 1200) {
             closeMenu();
         }
-    }, [closeMenu]); // FIX 4: Added closeMenu dependency
+    }, [closeMenu]);
 
     return (
         <section id="heroSection" className="hero-section">
