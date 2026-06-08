@@ -1,5 +1,5 @@
 import {NavLink} from "react-router-dom";
-import React, {useEffect, useState} from "react";
+import React, {useCallback, useEffect, useState} from "react";
 import { SiGithub, SiInstagram, SiLeetcode } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa6";
 import {TypewriterTitle} from "../../Function/TypeWriter";
@@ -9,11 +9,13 @@ import resumePdf from "../../data/Flinchum, Alex - Resume.pdf";
 const titles = ["Full-Stack Developer", "Gameplay Designer", "Software-Test Engineer"];
 
 export default function HeroSection() {
+    // FIX 1: Corrected state array destructuring to include both value and setter
     const [navActive, setNavActive] = useState(false);
 
-    const closeMenu = () => {
+    // FIX 2: Wrapped in useCallback so it maintains reference integrity across renders
+    const closeMenu = useCallback(() => {
         setNavActive(false);
-    };
+    }, []);
 
     useEffect(() => {
         const handleResize = () => {
@@ -27,12 +29,13 @@ export default function HeroSection() {
         return () => {
             window.removeEventListener("resize", handleResize);
         };
-    }, []);
+    }, [closeMenu]); // FIX 3: Added closeMenu dependency
+
     useEffect(() => {
-        if(window.innerWidth <= 1200) {
+        if (window.innerWidth <= 1200) {
             closeMenu();
         }
-    }, []);
+    }, [closeMenu]); // FIX 4: Added closeMenu dependency
 
     return (
         <section id="heroSection" className="hero-section">
